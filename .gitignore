@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+
+# Dependencias
+package-lock.json
+yarn.lock
+
+# Compilación
+dist/
+build/
+
+# Entornos
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+pids/
+*.pid
+*.seed
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Coverage
+coverage/
+
+# NPM
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Archives
+*.tgz
+*.zip
+
+# Otros archivos y carpetas que podrían estar en el proyecto
+*.db
+*.sqlite
+
+# Gitignore de subcarpetas
+!node_modules/**/*.js
+!node_modules/**/*.json
