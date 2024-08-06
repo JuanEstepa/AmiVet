@@ -54,4 +54,3 @@ yarn-error.log
 # Gitignore de subcarpetas
 !node_modules/**/*.js
 !node_modules/**/*.json
-.vercel
