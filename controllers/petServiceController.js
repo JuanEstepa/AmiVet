@@ -10,6 +10,17 @@ module.exports = {
     }
   },
 
+  getPetServiceByPet: async (req, res) => {
+    const { id } = req.params;
+
+    try {
+      const result = await PetService.find({ petId: id });
+      return res.status(200).json({ data: result });
+    } catch (err) {
+      return res.status(500).json({ error: err.message });
+    }
+  },
+
   createPetService: async (req, res) => {
     try {
       const newPetService = new PetService(req.body);

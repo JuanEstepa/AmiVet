@@ -27,6 +27,7 @@ const {
 
 const {
   getPetService,
+  getPetServiceByPet,
   createPetService,
   updatePetService,
   deletePetService,
@@ -42,6 +43,8 @@ const {
  *         description: Welcome to the API.
  */
 routes.get("/", start);
+
+routes.get("/petService/:id", getPetServiceByPet);
 
 /**
  * @swagger
